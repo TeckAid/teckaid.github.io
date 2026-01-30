@@ -4,7 +4,7 @@ baseURL = "https://teckaid.com"
 # Title of your website (required).
 title = "TeckAid - AI Services for Business Growth"
 # Your theme name
-# theme = "hugoplate"
+theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "America/New_York"
 # post excerpt
@@ -133,9 +133,6 @@ lazy = true
 [[params.plugins.css]]
 link = "plugins/font-awesome/v6/icons.css"
 lazy = true
-[[params.plugins.css]]
-link = "css/chatbot.css" # TeckAid AI Chatbot styles
-lazy = false
 
 # JS Plugins
 [[params.plugins.js]]
@@ -166,6 +163,3 @@ lazy = true
 [[params.plugins.js]]
 link = "plugins/youtube-lite.js" # https://github.com/gethugothemes/hugo-modules/tree/master/videos
 lazy = true
-[[params.plugins.js]]
-link = "js/chatbot.js" # TeckAid AI Chatbot
-lazy = false
