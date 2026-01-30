@@ -71,11 +71,11 @@
   border-bottom: 2px solid #4a4a4a;
 }
 
-.chatbot-header h3 {
+.chatbot-window .chatbot-header h3 {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
-  color: white !important;
+  color: white;
 }
 
 .chatbot-close {
