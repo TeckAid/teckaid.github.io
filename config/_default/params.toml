@@ -20,7 +20,7 @@ theme_default = "system" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action - using Formspree for email forwarding to nasir@teckaid.com
-contact_form_action = "https://formspree.io/f/xwpkkdqa" # You'll need to create a Formspree account and update this
+contact_form_action = "https://formspree.io/f/mjgreljb" # You'll need to create a Formspree account and update this
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
