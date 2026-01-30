@@ -1,0 +1,8 @@
+{{/* Custom scripts */}}
+{{ with site.Params.custom_script }}
+  {{ . | safeHTML }}
+{{ end }}
+
+<!-- TeckAid AI Chatbot -->
+<link rel="stylesheet" href="{{ "css/chatbot.css" | absURL }}">
+<script defer src="{{ "js/chatbot.js" | absURL }}"></script>

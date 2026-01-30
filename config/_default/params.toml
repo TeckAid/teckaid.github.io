@@ -11,7 +11,7 @@ logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Hugoplate"
+logo_text = "TeckAid"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
@@ -19,15 +19,15 @@ theme_switcher = true
 theme_default = "system" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
-# contact form action
-contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
+# contact form action - using Formspree for email forwarding to nasir@teckaid.com
+contact_form_action = "https://formspree.io/f/xwpkkdqa" # You'll need to create a Formspree account and update this
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "Designed & Developed by [Zeon Studio](https://zeon.studio)"
+copyright = "© 2024 TeckAid. All Rights Reserved."
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -38,8 +38,8 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "Github"
-link = "https://github.com/zeon-studio/hugoplate"
+label = "Get Started"
+link = "/contact/"
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
@@ -57,15 +57,15 @@ show_categories = true
 [announcement]
 enable = true
 expire_days = 7
-content = "<span class='text-center block'>♥️ Loving Hugoplate? <a class='underline' href='https://github.com/zeon-studio/hugoplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>"
+content = "<span class='text-center block'>🚀 Ready to transform your business with AI? <a class='underline' href='/contact/' target='_blank'>Schedule a Free Consultation</a></span>"
 
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Hugo & Tailwindcss Starter"
-author = "zeon.studio"
-twitter = "zeon_studio"
+keywords = ["AI Services", "Artificial Intelligence", "Machine Learning", "Business AI", "AI Consulting", "AI Solutions", "Process Automation", "Data Analytics", "AI Development", "NLP", "Computer Vision"]
+description = "TeckAid provides comprehensive AI services for businesses. Transform your operations with custom AI solutions, machine learning, automation, and intelligent analytics."
+author = "TeckAid"
+twitter = "teckaid"
 image = "images/og-image.png"
 
 
