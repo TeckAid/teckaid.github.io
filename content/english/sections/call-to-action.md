@@ -1,12 +1,12 @@
 ---
 enable: true
-title: "Ready to build your next project with Hugo?"
+title: "Ready to transform your business with AI?"
 image: "/images/call-to-action.png"
-description: "Experience the future of web development with Hugoplate and Hugo. Build lightning-fast static sites with ease and flexibility."
+description: "Experience cutting-edge artificial intelligence solutions with Teck Aid. Leverage powerful AI technology to drive growth and innovation for your business."
 button:
   enable: true
-  label: "Fork Deploy and Edit Online 🚀"
-  link: "https://app.sitepins.com/new/clone?name=Hugoplate&repository=https://github.com/zeon-studio/hugoplate/"
+  label: "Get Started Today 🚀"
+  link: "/contact/"
 
 # don't create a separate page
 build:
