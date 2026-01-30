@@ -29,7 +29,7 @@ Modern medical practices struggle with:
 AI-powered scheduling systems optimize appointment management:
 
 **Real-World Example**: Riverside Family Medicine implemented an AI scheduling assistant that:
-- Analyzes no-show patterns and overboks intelligently
+- Analyzes no-show patterns and overbooks intelligently
 - Automatically schedules follow-up appointments
 - Sends personalized reminders via text, email, or phone
 - Fills last-minute cancellations from a waitlist
