@@ -1,53 +1,53 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jump-start your Hugo project and save valuable time."
+  title: "Transform Your Business with AI-Powered Solutions"
+  content: "TeckAid delivers cutting-edge artificial intelligence services to help businesses automate processes, gain actionable insights, and drive unprecedented growth through intelligent technology."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Fork Deploy and Edit Online 🚀"
-    link: "https://app.sitepins.com/new/clone?name=Hugoplate&repository=https://github.com/zeon-studio/hugoplate/"
+    label: "Get Started Today 🚀"
+    link: "/contact/"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "Comprehensive AI Solutions for Modern Business"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+    content: "TeckAid provides end-to-end AI services designed to revolutionize your business operations and unlock new opportunities for growth and efficiency."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Custom AI Model Development & Training"
+      - "Intelligent Process Automation & Workflow Optimization"
+      - "Advanced Data Analytics & Predictive Insights"
+      - "Natural Language Processing & Conversational AI"
+      - "Computer Vision & Image Recognition Solutions"
+      - "Machine Learning Integration & Deployment"
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      label: "Explore Our Services"
+      link: "/contact/"
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
+  - title: "Why Choose AI for Your Business?"
+    image: "/images/service-2.png"
+    content: "Artificial Intelligence is transforming industries worldwide. Our AI solutions help you stay competitive by leveraging the latest technological innovations. Key benefits include:"
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Automated Decision Making: AI-powered insights enable faster, data-driven business decisions"
+      - "Enhanced Efficiency: Reduce operational costs by automating repetitive tasks and workflows"
+      - "Scalable Solutions: AI systems that grow with your business needs and adapt to changing markets"
     button:
-      enable: false
-      label: ""
-      link: ""
+      enable: true
+      label: "Learn More"
+      link: "/contact/"
+
+  - title: "Our AI Implementation Approach"
+    image: "/images/service-3.png"
+    content: "We follow a proven methodology to ensure successful AI adoption that delivers measurable business value and ROI."
+    bulletpoints:
+      - "Discovery & Strategy: Identify high-impact AI opportunities aligned with your business goals"
+      - "Custom Development: Build tailored AI solutions using cutting-edge frameworks and best practices"
+      - "Seamless Integration: Deploy AI models into your existing systems with minimal disruption"
+      - "Ongoing Support: Continuous monitoring, optimization, and improvement of AI performance"
+    button:
+      enable: true
+      label: "Schedule a Consultation"
+      link: "/contact/"
 ---
