@@ -9,9 +9,10 @@ banner:
     label: "Get Started Today 🚀"
     link: "/contact/"
 
-# Features
+# Features (Services Section)
 features:
   - title: "Comprehensive AI Solutions for Modern Business"
+    id: "services"
     image: "/images/service-1.png"
     content: "TeckAid provides end-to-end AI services designed to revolutionize your business operations and unlock new opportunities for growth and efficiency."
     bulletpoints:
@@ -27,6 +28,7 @@ features:
       link: "/contact/"
 
   - title: "Why Choose AI for Your Business?"
+    id: "benefits"
     image: "/images/service-2.png"
     content: "Artificial Intelligence is transforming industries worldwide. Our AI solutions help you stay competitive by leveraging the latest technological innovations. Key benefits include:"
     bulletpoints:

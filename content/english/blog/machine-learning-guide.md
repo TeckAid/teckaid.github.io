@@ -3,7 +3,7 @@ title: "Understanding Machine Learning: A Business Leader's Guide"
 meta_title: "Machine Learning Guide for Business | TeckAid"
 description: "Learn the fundamentals of machine learning and how it can drive business value. A comprehensive guide for business leaders and decision-makers."
 date: 2024-01-10T05:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/machine-learning-guide.png"
 categories: ["AI", "Machine Learning"]
 author: "TeckAid Team"
 tags: ["machine learning", "AI", "business intelligence", "data science"]
