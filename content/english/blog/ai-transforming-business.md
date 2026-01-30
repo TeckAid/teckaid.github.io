@@ -3,7 +3,7 @@ title: "How AI is Transforming Business Operations in 2024"
 meta_title: "AI Business Transformation Guide | TeckAid"
 description: "Discover how artificial intelligence is revolutionizing business operations, improving efficiency, and driving growth across industries in 2024."
 date: 2024-01-15T05:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/ai-transforming-business.png"
 categories: ["AI", "Business"]
 author: "TeckAid Team"
 tags: ["AI", "automation", "business transformation", "machine learning"]
