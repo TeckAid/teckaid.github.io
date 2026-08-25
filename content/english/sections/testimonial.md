@@ -1,29 +1,29 @@
 ---
 enable: true
 title: "What Our Clients Are Saying"
-description: "Don't just take our word for it - hear from some of our satisfied clients! Check out testimonials from businesses we've helped transform with AI solutions."
+description: "From Houston realtors to bootstrapped founders — hear how small businesses put TeckAid agents to work."
 
 # Testimonials
 testimonials:
-  - name: "Sarah Johnson"
-    designation: "Operations Director, Manufacturing Co."
+  - name: "Apex Realtors Team"
+    designation: "Real Estate Brokerage, Houston TX"
     avatar: "/images/avatar-sm.png"
-    content: "TeckAid's AI automation solutions transformed our quality control process. We've reduced defects by 45% and increased production efficiency by 30%. Their team understood our needs and delivered beyond expectations."
+    content: "TeckAid built us a voice reception service and a custom lead-gen agent. Inbound calls are answered 24/7, leads are qualified and booked straight into our CRM, and our agents finally focus on closing instead of phones."
 
-  - name: "Dr. Michael Chen"
-    designation: "Medical Practice Owner"
+  - name: "Daniel Ortiz"
+    designation: "Founder, Home Services Co."
     avatar: "/images/avatar-sm.png"
-    content: "The AI-powered patient scheduling and diagnostic assistance system TeckAid built for our practice has been a game-changer. We've improved patient satisfaction scores and reduced administrative overhead significantly."
+    content: "The AI receptionist handles our after-hours calls and quotes. We used to miss half of them. Now every job request is captured and routed to scheduling — we're booking more without adding staff."
 
-  - name: "Robert Martinez"
-    designation: "Retail Chain Manager"
+  - name: "Priya Nair"
+    designation: "SaaS Founder"
     avatar: "/images/avatar-sm.png"
-    content: "TeckAid implemented an intelligent inventory management system that uses predictive analytics. We've reduced waste by 35% and improved stock availability. The ROI was evident within the first quarter."
+    content: "They vibe-coded our MVP in under three weeks. We went from idea to a working micro-SaaS with real users, then hardened it with our data. Exactly the speed we needed to test the market."
 
-  - name: "Jennifer Williams"
-    designation: "IT Director, Financial Services"
+  - name: "Marcus Bell"
+    designation: "Clinic Operations Lead"
     avatar: "/images/avatar-sm.png"
-    content: "Working with TeckAid on our backend automation project was seamless. Their expertise in AI and understanding of our business processes resulted in a solution that saved us 200+ hours monthly in manual processing."
+    content: "TeckAid automated our intake and follow-ups across three tools. We got back 25+ hours a week of admin time and our no-show rate dropped because reminders actually go out."
 
 # don't create a separate page
 build:

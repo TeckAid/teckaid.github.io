@@ -2,7 +2,7 @@
 # The base URL of your site (required). This will be prepended to all relative URLs.
 baseURL = "https://teckaid.com"
 # Title of your website (required).
-title = "TeckAid - AI Services for Business Growth"
+title = "TeckAid - AI Agentic Services for Small Business"
 # Your theme name
 theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -98,6 +98,12 @@ ordered = true
 [mediaTypes]
 [mediaTypes."application/manifest+json"]
 suffixes = ["webmanifest"]
+
+############################# Security #############################
+# Allow the Tailwind CLI binary used by css.TailwindCSS in the theme
+[security]
+[security.exec]
+allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
 
 
 ########################### Output Format ##########################

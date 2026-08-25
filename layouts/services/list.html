@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section-sm">
+    <div class="container">
+      {{ with .Content }}<div class="row justify-center mb-10"><div class="lg:col-10 content">{{ . }}</div></div>{{ end }}
+      <div class="row gy-4">
+        {{ range .RegularPages }}
+          <div class="md:col-6 lg:col-4">
+            <div class="h-full rounded-lg border border-border bg-light px-6 py-8 transition hover:shadow-lg dark:bg-darkmode-light">
+              <h3 class="h4 mb-3">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h3>
+              <p class="mb-5 text-text-light dark:text-white">{{ .Description }}</p>
+              <a class="text-primary underline-offset-4 hover:underline" href="{{ .RelPermalink }}">Learn more <i class="fa fa-arrow-right pl-1"></i></a>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

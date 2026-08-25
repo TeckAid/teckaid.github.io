@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" fill="none" role="img" aria-label="Vibe-coded MVP shipped fast">
+  <defs>
+    <linearGradient id="mBg" x1="0" y1="0" x2="520" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFF6FF"/><stop offset="1" stop-color="#ECFEFF"/>
+    </linearGradient>
+    <linearGradient id="mBolt" x1="230" y1="120" x2="300" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="420" rx="24" fill="url(#mBg)"/>
+  <!-- app blocks -->
+  <g>
+    <rect x="80" y="150" width="150" height="190" rx="16" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <rect x="100" y="172" width="110" height="10" rx="5" fill="#BFDBFE"/>
+    <rect x="100" y="194" width="80" height="8" rx="4" fill="#DBEAFE"/>
+    <rect x="100" y="214" width="110" height="60" rx="10" fill="#EFF6FF"/>
+    <rect x="100" y="290" width="110" height="10" rx="5" fill="#DBEAFE"/>
+    <rect x="100" y="310" width="70" height="10" rx="5" fill="#DBEAFE"/>
+
+    <rect x="290" y="150" width="150" height="190" rx="16" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <rect x="310" y="172" width="110" height="10" rx="5" fill="#BFDBFE"/>
+    <rect x="310" y="194" width="80" height="8" rx="4" fill="#DBEAFE"/>
+    <rect x="310" y="214" width="110" height="60" rx="10" fill="#ECFEFF"/>
+    <rect x="310" y="290" width="110" height="10" rx="5" fill="#DBEAFE"/>
+    <rect x="310" y="310" width="70" height="10" rx="5" fill="#DBEAFE"/>
+  </g>
+  <!-- lightning bolt -->
+  <path d="M260 90 L300 180 L262 180 L300 270 L222 168 L260 168 Z" fill="url(#mBolt)"/>
+  <g fill="#38BDF8"><circle cx="120" cy="110" r="4"/><circle cx="410" cy="110" r="5"/><circle cx="430" cy="360" r="4"/></g>
+</svg>

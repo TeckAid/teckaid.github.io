@@ -1,6 +1,6 @@
-<h1 align="center">TeckAid - AI Services for Business Growth</h1>
+<h1 align="center">TeckAid - AI Agentic Services for Small Business</h1>
 
-<p align="center">Welcome to the TeckAid website repository. This site showcases our AI-powered solutions designed to help businesses automate processes, gain actionable insights, and drive growth through intelligent technology.</p>
+<p align="center">Welcome to the TeckAid website repository. TeckAid builds AI agents, vibe-coded MVPs, and process automation that help small businesses run like a 24/7 company — voice reception, lead generation, and generative micro-SaaS.</p>
 
 <p align="center">🌐 <a href="https://teckaid.com">Visit TeckAid.com</a></p>
 
@@ -18,16 +18,14 @@
 
 ## 🤖 About TeckAid
 
-TeckAid is a leading provider of AI services helping businesses harness the power of artificial intelligence for growth, efficiency, and innovation. We deliver cutting-edge AI solutions including:
+TeckAid is an AI studio for small business. We build production-ready AI that acts like extra team members, including:
 
-- **Custom AI Model Development & Training**
-- **Intelligent Process Automation & Workflow Optimization**
-- **Advanced Data Analytics & Predictive Insights**
-- **Natural Language Processing & Conversational AI**
-- **Computer Vision & Image Recognition Solutions**
-- **Machine Learning Integration & Deployment**
+- **AI Agent Services** — voice receptionists & lead-gen agents that answer, qualify, and book 24/7
+- **Vibe-Coded MVPs** — generative micro-SaaS & MVP apps shipped in weeks, not quarters
+- **Process AI Automation** — connect your stack and let agents handle the busywork
+- **RAG Chatbots & Assistants** — custom knowledge assistants trained on your business
 
-Our mission is to democratize AI and make cutting-edge intelligent solutions accessible to organizations ready to embrace the future.
+Our work is process-first and portable — no black boxes, no lock-in. See our [Apex Realtors case study](https://teckaid.com/case-studies/apex-realtors/) for a real Houston SMB engagement.
 
 ---
 
@@ -35,7 +33,9 @@ Our mission is to democratize AI and make cutting-edge intelligent solutions acc
 
 The TeckAid website includes the following pages:
 
-- **🏠 Home** - Main landing page showcasing our AI services and solutions
+- **🏠 Home** - Main landing page showcasing our AI agentic services
+- **🛠 Services** - AI Agent Services, Vibe-Coded MVPs, and Process Automation
+- **📊 Case Studies** - Real small-business results (e.g., Apex Realtors)
 - **👤 About** - Information about TeckAid, our vision, and what we do
 - **📞 Contact** - Get in touch with our team to discuss AI solutions
 - **📝 Blog** - Articles and insights about AI applications in business, including:

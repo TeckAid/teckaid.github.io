@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" fill="none" role="img" aria-label="AI agents handling conversations">
+  <defs>
+    <linearGradient id="aBg" x1="0" y1="0" x2="520" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFF6FF"/><stop offset="1" stop-color="#ECFEFF"/>
+    </linearGradient>
+    <linearGradient id="aMark" x1="200" y1="120" x2="320" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="420" rx="24" fill="url(#aBg)"/>
+  <g stroke="#93C5FD" stroke-width="3" opacity="0.8" stroke-linecap="round">
+    <path d="M260 200 C 180 150, 120 160, 90 190"/>
+    <path d="M260 200 C 340 150, 400 160, 430 190"/>
+  </g>
+  <!-- hub -->
+  <rect x="208" y="148" width="104" height="104" rx="26" fill="url(#aMark)"/>
+  <g stroke="#FFFFFF" stroke-width="4" stroke-linecap="round">
+    <line x1="260" y1="200" x2="234" y2="172"/><line x1="260" y1="200" x2="286" y2="172"/><line x1="260" y1="200" x2="260" y2="232"/>
+  </g>
+  <circle cx="260" cy="200" r="12" fill="#FFFFFF"/><circle cx="234" cy="172" r="7" fill="#CFFAFE"/><circle cx="286" cy="172" r="7" fill="#FFFFFF"/><circle cx="260" cy="232" r="7" fill="#FFFFFF"/>
+  <!-- chat bubbles -->
+  <g>
+    <rect x="56" y="170" width="96" height="46" rx="14" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <path d="M76 216 l0 16 l18 -16 z" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <rect x="74" y="188" width="56" height="6" rx="3" fill="#BFDBFE"/><rect x="74" y="200" width="40" height="6" rx="3" fill="#DBEAFE"/>
+
+    <rect x="368" y="170" width="96" height="46" rx="14" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <path d="M444 216 l0 16 l-18 -16 z" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <rect x="386" y="188" width="56" height="6" rx="3" fill="#BFDBFE"/><rect x="386" y="200" width="40" height="6" rx="3" fill="#DBEAFE"/>
+
+    <rect x="170" y="300" width="180" height="44" rx="14" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <rect x="190" y="316" width="120" height="6" rx="3" fill="#BFDBFE"/><rect x="190" y="328" width="80" height="6" rx="3" fill="#DBEAFE"/>
+  </g>
+  <g fill="#38BDF8"><circle cx="120" cy="120" r="4"/><circle cx="410" cy="120" r="5"/><circle cx="450" cy="300" r="4"/></g>
+</svg>

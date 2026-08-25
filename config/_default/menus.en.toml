@@ -8,12 +8,12 @@ weight = 1
 
 [[main]]
 name = "Services"
-url = "/#services"
+url = "/services/"
 weight = 2
 
 [[main]]
-name = "Benefits"
-url = "/#benefits"
+name = "Case Studies"
+url = "/case-studies/"
 weight = 3
 
 [[main]]
@@ -35,20 +35,30 @@ weight = 6
 # footer menu
 [[footer]]
 name = "Services"
-url = "/#services"
+url = "/services/"
 weight = 1
+
+[[footer]]
+name = "AI Agent Services"
+url = "/services/ai-agent-services/"
+weight = 2
+
+[[footer]]
+name = "Case Studies"
+url = "/case-studies/"
+weight = 3
 
 [[footer]]
 name = "Blog"
 url = "/blog"
-weight = 2
+weight = 4
 
 [[footer]]
 name = "Contact"
 url = "/contact"
-weight = 3
+weight = 5
 
 [[footer]]
 name = "Privacy Policy"
 url = "/privacy-policy"
-weight = 4
+weight = 6

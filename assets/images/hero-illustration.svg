@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none" role="img" aria-label="AI agent network for small business">
+  <defs>
+    <linearGradient id="hGrad" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#ECFEFF"/>
+    </linearGradient>
+    <linearGradient id="hMark" x1="300" y1="120" x2="500" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="24" fill="url(#hGrad)"/>
+
+  <!-- connecting lines -->
+  <g stroke="#93C5FD" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <path d="M400 230 C 300 180, 180 200, 150 250"/>
+    <path d="M400 230 C 500 180, 620 200, 650 250"/>
+    <path d="M400 230 C 330 330, 250 360, 200 380"/>
+    <path d="M400 230 C 470 330, 560 360, 610 380"/>
+  </g>
+
+  <!-- center agent hub -->
+  <rect x="330" y="160" width="140" height="140" rx="34" fill="url(#hMark)"/>
+  <g stroke="#FFFFFF" stroke-width="5" stroke-linecap="round">
+    <line x1="400" y1="230" x2="368" y2="195"/>
+    <line x1="400" y1="230" x2="432" y2="195"/>
+    <line x1="400" y1="230" x2="400" y2="270"/>
+  </g>
+  <circle cx="400" cy="230" r="16" fill="#FFFFFF"/>
+  <circle cx="368" cy="195" r="10" fill="#FFFFFF"/>
+  <circle cx="432" cy="195" r="10" fill="#CFFAFE"/>
+  <circle cx="400" cy="270" r="10" fill="#FFFFFF"/>
+
+  <!-- floating node cards -->
+  <g>
+    <rect x="110" y="225" width="80" height="60" rx="14" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <circle cx="138" cy="248" r="9" fill="#2563EB"/>
+    <rect x="156" y="240" width="34" height="6" rx="3" fill="#BFDBFE"/>
+    <rect x="156" y="254" width="24" height="6" rx="3" fill="#DBEAFE"/>
+
+    <rect x="610" y="225" width="80" height="60" rx="14" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <circle cx="638" cy="248" r="9" fill="#06B6D4"/>
+    <rect x="656" y="240" width="34" height="6" rx="3" fill="#BFDBFE"/>
+    <rect x="656" y="254" width="24" height="6" rx="3" fill="#DBEAFE"/>
+
+    <rect x="170" y="360" width="80" height="60" rx="14" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <circle cx="198" cy="383" r="9" fill="#0EA5E9"/>
+    <rect x="216" y="375" width="34" height="6" rx="3" fill="#BFDBFE"/>
+    <rect x="216" y="389" width="24" height="6" rx="3" fill="#DBEAFE"/>
+
+    <rect x="550" y="360" width="80" height="60" rx="14" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <circle cx="578" cy="383" r="9" fill="#2563EB"/>
+    <rect x="596" y="375" width="34" height="6" rx="3" fill="#BFDBFE"/>
+    <rect x="596" y="389" width="24" height="6" rx="3" fill="#DBEAFE"/>
+  </g>
+
+  <!-- floating dots -->
+  <g fill="#38BDF8">
+    <circle cx="250" cy="120" r="5"/>
+    <circle cx="560" cy="130" r="4"/>
+    <circle cx="690" cy="330" r="5"/>
+    <circle cx="120" cy="320" r="4"/>
+  </g>
+</svg>

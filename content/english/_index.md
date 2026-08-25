@@ -1,55 +1,55 @@
 ---
 # Banner
 banner:
-  title: "Transform Your Business with AI-Powered Solutions"
-  content: "TeckAid delivers cutting-edge artificial intelligence services to help businesses automate processes, gain actionable insights, and drive unprecedented growth through intelligent technology."
-  image: "/images/banner.png"
+  title: "AI agents that run your small business on autopilot"
+  content: "TeckAid builds AI agents and vibe-coded MVPs that answer calls, capture leads, and automate the busywork — so small teams operate like a 24/7 company. Shipped in weeks, not quarters."
+  image: "/images/hero-illustration.png"
   button:
     enable: true
-    label: "Get Started Today 🚀"
+    label: "Book a free strategy call"
     link: "/contact/"
 
 # Features (Services Section)
 features:
-  - title: "Comprehensive AI Solutions for Modern Business"
-    id: "services"
-    image: "/images/service-1.png"
-    content: "TeckAid provides end-to-end AI services designed to revolutionize your business operations and unlock new opportunities for growth and efficiency."
+  - title: "Why small businesses are winning with AI agents"
+    id: "why"
+    image: "/images/feat-agents.png"
+    content: "You can't staff a 24/7 operations team — but an agent never sleeps, never forgets a follow-up, and never drops a lead. We deploy production-ready agents that act like extra team members."
     bulletpoints:
-      - "Custom AI Model Development & Training"
-      - "Intelligent Process Automation & Workflow Optimization"
-      - "Advanced Data Analytics & Predictive Insights"
-      - "Natural Language Processing & Conversational AI"
-      - "Computer Vision & Image Recognition Solutions"
-      - "Machine Learning Integration & Deployment"
+      - "Always-on: voice & chat agents answer every lead, day or night"
+      - "Leaner ops: automate the work of 2–3 roles without new hires"
+      - "Consistent: every inquiry is captured, qualified, and routed"
+      - "Accountable: every conversation becomes a tracked opportunity"
     button:
       enable: true
-      label: "Explore Our Services"
-      link: "/contact/"
+      label: "See our agent services"
+      link: "/services/ai-agent-services/"
 
-  - title: "Why Choose AI for Your Business?"
-    id: "benefits"
-    image: "/images/service-2.png"
-    content: "Artificial Intelligence is transforming industries worldwide. Our AI solutions help you stay competitive by leveraging the latest technological innovations. Key benefits include:"
+  - title: "How we build: vibe-coded, shipped fast"
+    id: "process"
+    image: "/images/feat-mvp.png"
+    content: "We pair the speed of vibe coding with real product discipline. You get a working generative MVP or micro-SaaS in weeks, then we harden it with your data and integrations."
     bulletpoints:
-      - "Automated Decision Making: AI-powered insights enable faster, data-driven business decisions"
-      - "Enhanced Efficiency: Reduce operational costs by automating repetitive tasks and workflows"
-      - "Scalable Solutions: AI systems that grow with your business needs and adapt to changing markets"
+      - "Discovery sprint: we map the workflow and the ROI first"
+      - "Vibe-coded prototype: a working MVP in 1–2 weeks"
+      - "Deploy & integrate: plugs into your CRM, calendar, and inbox"
+      - "Iterate on real usage: we tune the agent from live results"
     button:
       enable: true
-      label: "Learn More"
-      link: "/contact/"
+      label: "Explore MVP builds"
+      link: "/services/vibe-coded-mvp/"
 
-  - title: "Our AI Implementation Approach"
-    image: "/images/service-3.png"
-    content: "We follow a proven methodology to ensure successful AI adoption that delivers measurable business value and ROI."
+  - title: "Built for Houston SMBs, scaled anywhere"
+    id: "approach"
+    image: "/images/feat-automation.png"
+    content: "We're Houston-based and small-business first. Our work is process-first — we automate the actual work, not just a demo. Ask Apex Realtors, where we built custom lead generation and a voice reception service."
     bulletpoints:
-      - "Discovery & Strategy: Identify high-impact AI opportunities aligned with your business goals"
-      - "Custom Development: Build tailored AI solutions using cutting-edge frameworks and best practices"
-      - "Seamless Integration: Deploy AI models into your existing systems with minimal disruption"
-      - "Ongoing Support: Continuous monitoring, optimization, and improvement of AI performance"
+      - "Local focus: Houston-based, we know small-business reality"
+      - "Proven: custom lead-gen + voice reception for Apex Realtors"
+      - "Process-first: we automate the work, not just the pitch"
+      - "Yours to keep: portable, documented, no lock-in"
     button:
       enable: true
-      label: "Schedule a Consultation"
-      link: "/contact/"
+      label: "Read the Apex Realtors case"
+      link: "/case-studies/apex-realtors/"
 ---

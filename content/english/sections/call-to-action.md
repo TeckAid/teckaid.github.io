@@ -1,11 +1,11 @@
 ---
 enable: true
-title: "Ready to transform your business with AI?"
+title: "Ready to put an AI agent to work?"
 image: "/images/call-to-action.png"
-description: "Experience cutting-edge artificial intelligence solutions with Teck Aid. Leverage powerful AI technology to drive growth and innovation for your business."
+description: "TeckAid builds voice receptionists, lead-gen agents, and vibe-coded MVPs that run your small business on autopilot. Book a free strategy call and we'll map your first workflow."
 button:
   enable: true
-  label: "Get Started Today 🚀"
+  label: "Book a free strategy call"
   link: "/contact/"
 
 # don't create a separate page

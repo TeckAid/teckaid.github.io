@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none" role="img" aria-label="TeckAid - AI Agentic Services for Small Business">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#0E2A47"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="60" y1="60" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="320" fill="url(#glow)"/>
+
+  <!-- Mark -->
+  <rect x="80" y="80" width="120" height="120" rx="28" fill="url(#mark)"/>
+  <g stroke="#FFFFFF" stroke-width="4" stroke-linecap="round">
+    <line x1="140" y1="140" x2="108" y2="112"/>
+    <line x1="140" y1="140" x2="172" y2="112"/>
+    <line x1="140" y1="140" x2="140" y2="176"/>
+  </g>
+  <circle cx="140" cy="140" r="13" fill="#FFFFFF"/>
+  <circle cx="108" cy="112" r="9" fill="#FFFFFF"/>
+  <circle cx="172" cy="112" r="9" fill="#CFFAFE"/>
+  <circle cx="140" cy="176" r="9" fill="#FFFFFF"/>
+
+  <!-- Wordmark -->
+  <text x="230" y="166" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="62" font-weight="800" letter-spacing="-1" fill="#F8FAFC">Teck<tspan fill="#38BDF8">Aid</tspan></text>
+
+  <!-- Tagline -->
+  <text x="82" y="330" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="700" fill="#E2E8F0">AI Agentic Services for Small Business</text>
+  <text x="82" y="390" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="400" fill="#7DD3FC">Vibe-Coded MVPs · Process Automation · Voice &amp; Lead Agents</text>
+
+  <!-- Pill -->
+  <rect x="82" y="450" width="470" height="64" rx="32" fill="#0EA5E9" fill-opacity="0.15" stroke="#22D3EE" stroke-opacity="0.5"/>
+  <text x="112" y="492" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#BAE6FD">From idea to deployed agent in weeks, not quarters.</text>
+</svg>

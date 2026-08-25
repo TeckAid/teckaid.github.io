@@ -34,6 +34,36 @@
   {{ end }}
   <!-- /Banner -->
 
+  <!-- Services grid -->
+  {{ with site.Data.services }}
+    <section class="section-sm" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="md:col-10 lg:col-8 mx-auto mb-12 text-center">
+            <span class="mb-3 inline-block rounded-full bg-primary/10 px-4 py-1 text-sm font-semibold text-primary">What we build</span>
+            <h2 class="mb-4">AI agentic services for small business</h2>
+            <p class="text-lg">From voice receptionists to vibe-coded MVPs — we ship production-ready AI that runs your business on autopilot.</p>
+          </div>
+        </div>
+        <div class="row gy-4 justify-center">
+          {{ range . }}
+            <div class="md:col-6 lg:col-3">
+              <div class="h-full rounded-lg border border-border bg-light px-6 py-8 text-center transition hover:shadow-lg dark:bg-darkmode-light">
+                <div class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-2xl text-primary">
+                  <i class="fa {{ .icon }}"></i>
+                </div>
+                <h3 class="h5 mb-3">{{ .title }}</h3>
+                <p class="mb-5 text-text-light dark:text-white">{{ .description }}</p>
+                <a class="text-primary underline-offset-4 hover:underline" href="{{ .link }}">Learn more <i class="fa fa-arrow-right pl-1"></i></a>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Services grid -->
+
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}"{{ with .id }} id="{{ . }}"{{ end }}>

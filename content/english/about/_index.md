@@ -1,30 +1,29 @@
 ---
-title: "About TeckAid - Your AI Transformation Partner"
-meta_title: "About TeckAid | AI Services & Solutions"
-description: "TeckAid is a leading provider of AI services helping businesses harness the power of artificial intelligence for growth, efficiency, and innovation."
-image: "/images/image-placeholder.png"
+title: "About TeckAid - AI Agentic Services for Small Business"
+meta_title: "About TeckAid | AI Agentic Services"
+description: "TeckAid is a Houston-based AI studio building agents, vibe-coded MVPs, and process automation that help small businesses run like a 24/7 company."
+image: "/images/hero-illustration.png"
 layout: "about"
 draft: false
 ---
 
-TeckAid is at the forefront of artificial intelligence innovation, helping businesses of all sizes harness the transformative power of AI technology. Our mission is to democratize AI and make cutting-edge intelligent solutions accessible to organizations ready to embrace the future.
+TeckAid is an AI studio for small business. We build the things bigger companies have whole teams for — voice reception, lead generation, and process automation — and we ship them fast using vibe-coded MVPs and production-ready AI agents.
 
-### Our Vision
+### Our focus
 
-We envision a world where every business, regardless of size or industry, can leverage AI to unlock new opportunities, solve complex problems, and achieve unprecedented growth. Through our comprehensive suite of AI services, we're turning this vision into reality.
+We're small-business first. That means practical AI you can actually use on Monday, not a science project. Our work is process-first: we automate the real work, integrate with the tools you already run, and hand you something portable and documented.
 
-### What We Do
+* **AI Agents** — voice receptionists and lead-gen agents that answer, qualify, and book 24/7
+* **Vibe-Coded MVPs** — generative micro-SaaS and MVP apps shipped in weeks
+* **Process Automation** — connect your stack so agents handle the busywork
+* **RAG Assistants** — custom chatbots trained on your business data
 
-* **Custom AI Development**: Tailored machine learning models and AI solutions designed for your specific business needs
-* **Intelligent Automation**: Streamline operations and reduce costs with AI-powered process automation
-* **Data Analytics & Insights**: Transform raw data into actionable intelligence with advanced analytics
-* **Natural Language Processing**: Build conversational AI, chatbots, and text analysis solutions
-* **Computer Vision**: Implement image recognition, object detection, and visual intelligence systems
+### Proven with real clients
 
-### Why Choose TeckAid
+For **Apex Realtors** in Houston, we built a custom voice reception service and lead-gen agent that answers every inbound call and books qualified showings straight into their pipeline. [Read the case study →](/case-studies/apex-realtors/)
 
-With years of expertise in artificial intelligence and machine learning, our team of AI specialists brings deep technical knowledge and business acumen to every project. We don't just build AI solutions – we partner with you to ensure successful adoption and measurable ROI.
+### Why TeckAid
 
-Our proven methodology combines strategic consulting, agile development, and continuous optimization to deliver AI solutions that drive real business value. From initial concept to deployment and beyond, we're committed to your success in the AI-driven future.
+We pair the speed of generative AI with product discipline. You get a working system quickly, then we harden it with your data and integrations — no black boxes, no lock-in. Just AI that runs your business on autopilot.
 
-**Ready to transform your business with AI?** Let's discuss how our AI services can help you achieve your goals and stay ahead of the competition.
+**Ready to put an agent to work?** [Book a free strategy call](/contact/) and we'll map the highest-ROI workflow for your business.

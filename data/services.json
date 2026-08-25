@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "fa-headset",
+    "title": "AI Agent Services",
+    "description": "Voice receptionists and lead-gen agents that answer, qualify, and book customers 24/7.",
+    "link": "/services/ai-agent-services/"
+  },
+  {
+    "icon": "fa-bolt",
+    "title": "Vibe-Coded MVPs",
+    "description": "Generative micro-SaaS and MVP apps designed and shipped in weeks, not quarters.",
+    "link": "/services/vibe-coded-mvp/"
+  },
+  {
+    "icon": "fa-gears",
+    "title": "Process Automation",
+    "description": "Connect your stack and let agents handle the repetitive work across your tools.",
+    "link": "/services/process-automation/"
+  },
+  {
+    "icon": "fa-comments",
+    "title": "RAG Chatbots & Assistants",
+    "description": "Custom knowledge assistants trained on your business data and docs.",
+    "link": "/services/ai-agent-services/#chatbots"
+  }
+]
