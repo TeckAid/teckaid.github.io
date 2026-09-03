@@ -1,7 +1,4 @@
+# TeckAid — static site (no build step)
 [build]
-publish = "public"
-command = "yarn project-setup; yarn build"
-
-[build.environment]
-HUGO_VERSION = "0.151.0"
-GO_VERSION = "1.25.1"
+  publish = "."
+  command = "echo 'Static site — no build step required.'"

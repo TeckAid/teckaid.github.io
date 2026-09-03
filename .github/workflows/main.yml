@@ -1,10 +1,12 @@
-# workflow for building and deploying to GitHub Pages
-name: Deploy Hugo site to Pages
+# Workflow for deploying the static TeckAid site to GitHub Pages
+name: Deploy TeckAid to Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+  # Allows manual runs from the Actions tab
+  workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -12,56 +14,32 @@ permissions:
   pages: write
   id-token: write
 
-# Default to bash
-defaults:
-  run:
-    shell: bash
-
-# Environment variables available to all jobs and steps in this workflow
-env:
-  HUGO_ENV: production
-  HUGO_VERSION: "0.151.0"
-  GO_VERSION: "1.23.3"
-  TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
-  TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-  TINA_SEARCH_TOKEN: ${{ secrets.TINA_SEARCH_TOKEN }}
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  # Build job
+  # Build job (no framework build — the site is plain static HTML/CSS/JS)
   build:
-    runs-on: ubuntu-24.04-arm
+    runs-on: ubuntu-latest
     steps:
-      - name: Install Hugo
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-
-      - name: Install Go
-        run: |
-          wget -O ${{ runner.temp }}/go.deb https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz \
-          && sudo tar -C /usr/local -xzf ${{ runner.temp }}/go.deb
-
       - name: Checkout
-        uses: actions/checkout@v4.2.2
-        with:
-          submodules: recursive
-          fetch-depth: 0
+        uses: actions/checkout@v4
 
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v5
 
-      - name: Setup Project
-        run: npm run project-setup
-
-      - name: Install npm dependencies
-        run: npm install
-
-      - name: Build site
-        run: npm run build
+      - name: Prepare static site
+        run: |
+          mkdir -p public
+          cp index.html 404.html public/
+          cp CNAME public/   # required to keep the teckaid.com custom domain
+          cp _redirects public/ 2>/dev/null || true
+          cp -r css js assets products about blog contact services terms privacy public/
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
@@ -70,9 +48,9 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-24.04-arm
+    runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4.0.5
+        uses: actions/deploy-pages@v4

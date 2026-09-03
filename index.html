@@ -1,757 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TeckAid - AI Services for Business Growth. Custom AI solutions, intelligent automation, and data analytics to drive your business forward.">
-    <meta name="keywords" content="AI, Machine Learning, Automation, Data Analytics, Business Solutions">
-    <meta name="author" content="TeckAid">
-    <meta property="og:title" content="TeckAid - AI Services for Business Growth">
-    <meta property="og:description" content="Intelligent AI solutions to transform your business operations.">
-    <meta property="og:type" content="website">
-    
-    <title>TeckAid - AI Services for Business Growth</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Custom Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fraunces:wght@700&display=swap" rel="stylesheet">
-    
-    <style>
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Fraunces', serif;
-        }
-        
-        .gradient-mesh {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
-            background-size: 200% 200%;
-            animation: gradientShift 15s ease infinite;
-        }
-        
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        .gradient-subtle {
-            background: radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 80%, rgba(240, 147, 251, 0.1) 0%, transparent 50%);
-        }
-        
-        nav {
-            transition: all 0.3s ease;
-        }
-        
-        nav.scroll-shadow {
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-        }
-        
-        .menu-toggle {
-            display: none;
-        }
-        
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-            
-            .nav-menu {
-                position: absolute;
-                top: 70px;
-                left: 0;
-                right: 0;
-                background: white;
-                flex-direction: column;
-                gap: 1rem;
-                padding: 2rem;
-                border-top: 1px solid #e5e7eb;
-                display: none;
-                z-index: 40;
-            }
-            
-            .nav-menu.active {
-                display: flex;
-            }
-        }
-        
-        .cta-button {
-            transition: all 0.3s ease;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 24px rgba(102, 126, 234, 0.3);
-        }
-        
-        .feature-card {
-            transition: all 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-4px);
-        }
-        
-        .testimonial-card {
-            transition: all 0.3s ease;
-        }
-        
-        .testimonial-card:hover {
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .tab-button {
-            transition: all 0.3s ease;
-            border-bottom: 2px solid transparent;
-        }
-        
-        .tab-button.active {
-            border-bottom-color: #667eea;
-            color: #667eea;
-        }
-        
-        .scroll-smooth {
-            scroll-behavior: smooth;
-        }
-        
-        .hero-text-animate {
-            animation: fadeInUp 0.8s ease 0.2s both;
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .fade-in-delay-1 {
-            animation: fadeInUp 0.8s ease 0.3s both;
-        }
-        
-        .fade-in-delay-2 {
-            animation: fadeInUp 0.8s ease 0.5s both;
-        }
-        
-        .fade-in-delay-3 {
-            animation: fadeInUp 0.8s ease 0.7s both;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Make Small Businesses AI-Native | TeckAid</title>
+  <meta name="description" content="Foundations first: one AI brain that knows your business, agents that take the busywork, and tools your whole team uses every day. From audit to roadmap in 14 days.">
+  <meta property="og:title" content="We Make Small Businesses AI-Native | TeckAid">
+  <meta property="og:description" content="One AI brain that knows your business, agents that take the busywork, tools your team uses daily. Built for small business. Owned by you.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="scroll-smooth">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16 md:h-20">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-lg">T</span>
-                    </div>
-                    <span class="font-bold text-lg hidden sm:block">TeckAid</span>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center gap-8 flex-1 justify-center">
-                    <a href="#platform" class="text-gray-700 hover:text-blue-600 transition">Agent Platform</a>
-                    <a href="#apps" class="text-gray-700 hover:text-blue-600 transition">Agentic AI Apps</a>
-                    <a href="#marketplace" class="text-gray-700 hover:text-blue-600 transition">Marketplace</a>
-                    <a href="#resources" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
-                    <a href="#company" class="text-gray-700 hover:text-blue-600 transition">Company</a>
-                </div>
-                
-                <!-- Right Actions -->
-                <div class="hidden md:flex items-center gap-4">
-                    <button class="text-gray-700 hover:text-blue-600 transition" aria-label="Change language">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 00.948-.684l1.498-4.493a1 1 0 011.502-.684l1.498 4.493a1 1 0 00.948.684H19a2 2 0 012 2v2M3 5a2 2 0 002 2h3.28a1 1 0 00.948.684l1.498 4.493a1 1 0 001.502.684l1.498-4.493a1 1 0 00.948-.684H19a2 2 0 012-2"></path>
-                        </svg>
-                    </button>
-                    <a href="#signin" class="text-gray-700 hover:text-blue-600 transition">Sign in</a>
-                    <button class="cta-button px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg font-medium hover:shadow-lg">
-                        Get in Touch
-                    </button>
-                </div>
-                
-                <!-- Mobile Menu Toggle -->
-                <button class="menu-toggle md:hidden" aria-label="Toggle menu" onclick="toggleMenu()">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            
-            <!-- Mobile Menu -->
-            <div class="nav-menu md:hidden">
-                <a href="#platform" class="text-gray-700 hover:text-blue-600 transition py-2">Agent Platform</a>
-                <a href="#apps" class="text-gray-700 hover:text-blue-600 transition py-2">Agentic AI Apps</a>
-                <a href="#marketplace" class="text-gray-700 hover:text-blue-600 transition py-2">Marketplace</a>
-                <a href="#resources" class="text-gray-700 hover:text-blue-600 transition py-2">Resources</a>
-                <a href="#company" class="text-gray-700 hover:text-blue-600 transition py-2">Company</a>
-                <a href="#signin" class="text-gray-700 hover:text-blue-600 transition py-2">Sign in</a>
-                <button class="cta-button w-full px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg font-medium">
-                    Get in Touch
-                </button>
-            </div>
-        </div>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="logo" href="/">
+        <img class="logo-mark" src="/assets/logo-animated.svg" alt="TeckAid">
+        <span>TeckAid</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link active" href="/">Home</a>
+        <a class="nav-link" href="/services/">Services</a>
+        <a class="nav-link" href="/products/">Products</a>
+        <a class="nav-link" href="/blog/">Blog</a>
+        <a class="nav-link" href="/about/">About</a>
+      </div>
+      <a class="btn btn-primary nav-cta" href="/contact/">Book a call
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
     </nav>
-    
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 md:pt-48 md:pb-28 gradient-subtle overflow-hidden">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Hero Content -->
-                <div>
-                    <h1 class="hero-text-animate text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                        Great experiences are built on a strong foundation.
-                    </h1>
-                    <p class="fade-in-delay-1 text-lg text-gray-600 mb-8 leading-relaxed">
-                        Harness the power of intelligent AI to automate workflows, gain actionable insights, and drive exponential business growth with TeckAid's enterprise-grade solutions.
-                    </p>
-                    <div class="fade-in-delay-2 flex gap-4 flex-wrap">
-                        <button class="cta-button px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg font-medium hover:shadow-lg">
-                            Get a Demo
-                        </button>
-                        <button class="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition">
-                            Analyst Reports
-                        </button>
-                    </div>
-                    <div class="fade-in-delay-3 mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                        <p class="text-sm font-medium text-blue-900">
-                            <span class="font-bold">Agent Platform:</span> Artemis Intelligence Engine
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Hero Illustration -->
-                <div class="hidden md:block">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl opacity-10 blur-3xl"></div>
-                        <div class="relative bg-white rounded-2xl p-8 shadow-lg">
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="h-32 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg opacity-80"></div>
-                                <div class="h-32 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg opacity-60"></div>
-                                <div class="h-32 bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg opacity-70"></div>
-                                <div class="h-32 bg-gradient-to-br from-green-400 to-green-600 rounded-lg opacity-75"></div>
-                                <div class="h-32 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg opacity-65"></div>
-                                <div class="h-32 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-lg opacity-70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="mobile-menu">
+      <a href="/">Home</a>
+      <a href="/services/">Services</a>
+      <a href="/products/">Products</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Book a call</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="absolute inset-0 grid-pattern" style="position:absolute; inset:0;"></div>
+    <div class="orb orb-green" style="top:20%; left:30%; width:400px; height:400px; transform:translate(-50%,-50%);"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow reveal"><span class="live-dot"></span> AI implementation for small business · 2026</span>
+          <h1 class="display-xl reveal d1">Everyone wants AI. Nobody knows where to start. We do.</h1>
+          <p class="lead reveal d2">Every owner wants an AI edge. Most have a couple of ChatGPT subscriptions and no idea what to build first.</p>
+          <p class="lead reveal d2" style="margin-top:0.75rem;"><strong style="color:rgb(var(--text))">We make small businesses AI-native.</strong> We rebuild how your company runs, from the foundations up: one AI brain that knows your business, tools your whole team uses daily, and agents that take the busywork. Built for you. Owned by you.</p>
+          <div class="hero-stats reveal d3">
+            <div class="stat"><b>50+</b><span>agents shipped</span></div>
+            <div class="stat"><b>We build,</b><span>not just advise</span></div>
+            <div class="stat"><b>Built on</b><span>your accounts</span></div>
+          </div>
+          <div class="flex gap-2 wrap mt-3 reveal d3">
+            <a class="btn btn-primary btn-lg btn-shine" href="/contact/">Book a free discovery call
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-ghost btn-lg" href="/products/">See what we build</a>
+          </div>
         </div>
-    </section>
-    
-    <!-- Enterprise Social Proof -->
-    <section class="py-16 md:py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-center text-gray-600 font-semibold mb-12">Trusted by leading enterprises worldwide</h2>
-            
-            <!-- Tabs -->
-            <div class="flex gap-4 mb-12 overflow-x-auto pb-4 justify-center md:justify-start md:flex-wrap">
-                <button class="tab-button active px-4 py-2 text-gray-700 font-medium whitespace-nowrap" onclick="switchTab('banking')">Banking</button>
-                <button class="tab-button px-4 py-2 text-gray-700 font-medium whitespace-nowrap" onclick="switchTab('healthcare')">Healthcare</button>
-                <button class="tab-button px-4 py-2 text-gray-700 font-medium whitespace-nowrap" onclick="switchTab('retail')">Retail</button>
-                <button class="tab-button px-4 py-2 text-gray-700 font-medium whitespace-nowrap" onclick="switchTab('telecom')">Telecom</button>
-                <button class="tab-button px-4 py-2 text-gray-700 font-medium whitespace-nowrap" onclick="switchTab('b2b')">B2B</button>
+
+        <aside class="hero-panel reveal d2" style="margin-top:1rem;">
+          <span class="pill"><span class="live-dot"></span> Live in 1–2 weeks</span>
+          <h3>Your AI brain, one source of truth</h3>
+          <p class="text-muted" style="font-size:0.92rem;">Everything your business knows — CRM, inbox, files, finance — linked into one memory your team and agents can both use.</p>
+          <div class="chip-row mt-2">
+            <span class="chip">CRM</span><span class="chip">Email</span><span class="chip">Calendar</span><span class="chip">Files</span><span class="chip">Finance</span>
+          </div>
+          <div class="mt-3">
+            <span class="chip"><b>Email Drafter</b> every reply pre-drafted in your voice</span>
+          </div>
+          <div class="mt-1">
+            <span class="chip"><b>Voice Receptionist</b> answers every call, books every lead</span>
+          </div>
+          <div class="mt-1">
+            <span class="chip"><b>AI Coworker</b> ask it anything, any time</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY -->
+  <section class="trusted">
+    <div class="container">
+      <p class="lead reveal">Trusted where the business is hands-on: real estate, home services, healthcare, e-commerce, professional services</p>
+      <div class="industry-list reveal">
+        <span class="industry-pill">Real estate</span>
+        <span class="industry-pill">Home services</span>
+        <span class="industry-pill">Healthcare</span>
+        <span class="industry-pill">E-commerce</span>
+        <span class="industry-pill">Professional services</span>
+        <span class="industry-pill">Restaurants</span>
+        <span class="industry-pill">Fitness</span>
+        <span class="industry-pill">Legal</span>
+        <span class="industry-pill">Non-profit</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section" id="results">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our results</span>
+        <h2 class="display-md">Real builds. Real numbers.</h2>
+        <p class="lead mt-2">Every figure below is client-reported and attributed. No projections, no composites. Ask us about any of them on the call.</p>
+      </div>
+
+      <div class="results-grid">
+        <article class="card card-pad result-card reveal">
+          <b class="result-big">8 hrs</b>
+          <span class="tag">Saved every week on lead follow-up</span>
+          <div class="flex items-center gap-2">
+            <span class="monogram">AR</span>
+            <div>
+              <b style="font-family:var(--font-display);">Apex Realtors</b>
+              <div class="tag">Real estate · Houston, TX</div>
             </div>
-            
-            <!-- Logo Grids -->
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center">
-                <div class="h-20 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <span class="text-gray-400 text-sm">Enterprise Logo</span>
-                </div>
-                <div class="h-20 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <span class="text-gray-400 text-sm">Enterprise Logo</span>
-                </div>
-                <div class="h-20 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <span class="text-gray-400 text-sm">Enterprise Logo</span>
-                </div>
-                <div class="h-20 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <span class="text-gray-400 text-sm">Enterprise Logo</span>
-                </div>
-                <div class="h-20 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <span class="text-gray-400 text-sm">Enterprise Logo</span>
-                </div>
+          </div>
+          <p class="text-muted" style="font-size:0.9rem;"><b style="color:rgb(var(--text));">Problem</b> — agents missing inbound buyer calls and losing leads to voicemail.</p>
+          <p class="text-muted" style="font-size:0.9rem;"><b style="color:rgb(var(--text));">Built</b> — AI voice reception and a lead-gen agent that answers, qualifies and books showings 24/7.</p>
+          <blockquote>“Every inbound call is now answered and booked. We stopped losing buyers to voicemail.”</blockquote>
+        </article>
+
+        <article class="card card-pad result-card reveal d1">
+          <b class="result-big">-40%</b>
+          <span class="tag">Admin costs, down by nearly half</span>
+          <div class="flex items-center gap-2">
+            <span class="monogram">IM</span>
+            <div>
+              <b style="font-family:var(--font-display);">Izzi Market</b>
+              <div class="tag">Retail &amp; grocery · Houston, TX</div>
             </div>
+          </div>
+          <p class="text-muted" style="font-size:0.9rem;"><b style="color:rgb(var(--text));">Problem</b> — the owner buried in vendor orders, inventory admin and daily reporting.</p>
+          <p class="text-muted" style="font-size:0.9rem;"><b style="color:rgb(var(--text));">Built</b> — business AI brain plus automation of ordering, invoicing and reporting.</p>
+          <blockquote>“Automating the repetitive ordering and reporting has given me hours back every single week.”</blockquote>
+        </article>
+
+        <article class="card card-pad result-card reveal">
+          <b class="result-big">24/7</b>
+          <span class="tag">Every call answered, every pickup booked</span>
+          <div class="flex items-center gap-2">
+            <span class="monogram">RC</span>
+            <div>
+              <b style="font-family:var(--font-display);">River Oaks Cleaners</b>
+              <div class="tag">Local service · Houston, TX</div>
+            </div>
+          </div>
+          <p class="text-muted" style="font-size:0.9rem;"><b style="color:rgb(var(--text));">Problem</b> — missed pickup calls and manual scheduling were quietly costing customers.</p>
+          <p class="text-muted" style="font-size:0.9rem;"><b style="color:rgb(var(--text));">Built</b> — voice receptionist plus booking automation across the front desk.</p>
+          <blockquote>“Customers now book pickups around the clock. We haven't missed an after-hours call since.”</blockquote>
+        </article>
+
+        <article class="card card-pad result-card reveal d1">
+          <b class="result-big">4x</b>
+          <span class="tag">Admin hours quartered</span>
+          <div class="flex items-center gap-2">
+            <span class="monogram">SS</span>
+            <div>
+              <b style="font-family:var(--font-display);">Summit Med Spa</b>
+              <div class="tag">Wellness &amp; med spa · Houston, TX</div>
+            </div>
+          </div>
+          <p class="text-muted" style="font-size:0.9rem;"><b style="color:rgb(var(--text));">Problem</b> — the front desk drowning in scheduling, reminders and reschedules.</p>
+          <p class="text-muted" style="font-size:0.9rem;"><b style="color:rgb(var(--text));">Built</b> — AI front desk, reminder automation and a treatment knowledge brain.</p>
+          <blockquote>“Our admin hours have quartered and the front desk finally has room to breathe.”</blockquote>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="section" id="method" style="background:rgb(var(--surface)); border-block:1px solid rgb(var(--border));">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The method</span>
+        <h2 class="display-md">Three layers. Clear ownership.</h2>
+        <p class="lead mt-2">We don't sell a pile of disconnected bots. We rebuild how your company runs, from the foundations up, and hand your team the keys.</p>
+      </div>
+
+      <div class="layer reveal">
+        <div>
+          <span class="layer-num">Layer 01 — Foundation</span>
+          <h3>Your AI Brain</h3>
+          <p class="lead">Your CRM, comms, emails, finance system and files, linked into one memory AI can actually use. Humans ask it questions. Agents read from it and write to it. Everyone works from the same truth.</p>
+          <p style="font-size:0.9rem; color:rgb(var(--muted));"><strong style="color:rgb(var(--text));">Most clients find information 60–80% faster within 30 days.</strong> The brain answers instead of a person.</p>
         </div>
-    </section>
-    
-    <!-- Product Solutions Section -->
-    <section id="platform" class="py-20 md:py-28">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">AI Solutions Built for Enterprise</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Comprehensive AI platform with pre-built applications, accelerators, and marketplace solutions tailored to your industry.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Banking -->
-                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:border-blue-400">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Banking & Finance</h3>
-                    <p class="text-gray-600 mb-4">AI-powered fraud detection, compliance automation, and customer service excellence.</p>
-                    <a href="#" class="text-blue-600 font-medium hover:text-blue-700">Explore →</a>
-                </div>
-                
-                <!-- Healthcare -->
-                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:border-blue-400">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Healthcare</h3>
-                    <p class="text-gray-600 mb-4">Patient insights, diagnostic assistance, and administrative automation for modern healthcare.</p>
-                    <a href="#" class="text-blue-600 font-medium hover:text-blue-700">Explore →</a>
-                </div>
-                
-                <!-- Retail -->
-                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:border-blue-400">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Retail & Commerce</h3>
-                    <p class="text-gray-600 mb-4">Personalized recommendations, inventory optimization, and customer engagement at scale.</p>
-                    <a href="#" class="text-blue-600 font-medium hover:text-blue-700">Explore →</a>
-                </div>
-                
-                <!-- IT & Operations -->
-                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:border-blue-400">
-                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19h6m0 2v-2m-9 2h.01M3 7h18M3 19V7a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">IT Operations</h3>
-                    <p class="text-gray-600 mb-4">Intelligent monitoring, incident management, and infrastructure optimization.</p>
-                    <a href="#" class="text-blue-600 font-medium hover:text-blue-700">Explore →</a>
-                </div>
-                
-                <!-- HR & Recruiting -->
-                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:border-blue-400">
-                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-2a6 6 0 0112 0v2zm0 0h6v-2a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">HR & Recruiting</h3>
-                    <p class="text-gray-600 mb-4">Talent acquisition, employee engagement, and HR process automation.</p>
-                    <a href="#" class="text-blue-600 font-medium hover:text-blue-700">Explore →</a>
-                </div>
-                
-                <!-- Custom Solutions -->
-                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:border-blue-400">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Custom Solutions</h3>
-                    <p class="text-gray-600 mb-4">Tailored AI implementations for unique business challenges and industry requirements.</p>
-                    <a href="#" class="text-blue-600 font-medium hover:text-blue-700">Explore →</a>
-                </div>
-            </div>
+        <div class="card card-pad" style="background:rgb(var(--bg));">
+          <div class="chip-row">
+            <span class="chip">CRM</span><span class="chip">Email</span><span class="chip">Calendar</span><span class="chip">Accounting</span><span class="chip">Docs & files</span><span class="chip">Notes</span>
+          </div>
+          <p class="mt-2" style="font-weight:600; font-family:var(--font-display);">Your AI Brain — one source of truth, readable by humans and agents.</p>
+          <a class="mt-2" style="display:inline-flex; align-items:center; gap:0.4rem; color:rgb(var(--accent-text)); font-weight:600; font-size:0.9rem;" href="/products/">Read more on the Business AI Brain
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
         </div>
-    </section>
-    
-    <!-- Value Proposition -->
-    <section class="py-20 md:py-28 bg-gradient-to-r from-blue-50 to-purple-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    Months to days. Not a roadmap. A runtime.
-                </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Deploy sophisticated AI solutions in days, not months. Our platform accelerates time-to-value with pre-built, battle-tested components.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Orchestration</h3>
-                    <p class="text-sm text-gray-600">Seamless workflow coordination and multi-agent management.</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Deployment</h3>
-                    <p class="text-sm text-gray-600">One-click deployment to cloud or on-premise infrastructure.</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Governance</h3>
-                    <p class="text-sm text-gray-600">Built-in compliance, audit trails, and risk management.</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-gray-900 mb-2">Scaling</h3>
-                    <p class="text-sm text-gray-600">Enterprise-grade performance at any scale.</p>
-                </div>
-            </div>
-            
-            <!-- Analyst Recognition -->
-            <div class="mt-16 grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl p-8 border-2 border-blue-200">
-                    <p class="text-sm font-semibold text-blue-600 mb-2">★★★★★ Gartner Magic Quadrant</p>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Leader in AI Platform Innovation</h3>
-                    <p class="text-gray-600 text-sm">Recognized as a leader in enterprise AI platforms for 3 consecutive years.</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 border-2 border-purple-200">
-                    <p class="text-sm font-semibold text-purple-600 mb-2">★★★★★ Forrester Wave</p>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Strong Performer in Agentic AI</h3>
-                    <p class="text-gray-600 text-sm">Top performer in independent analyst evaluation of AI solutions.</p>
-                </div>
-            </div>
+      </div>
+
+      <div class="layer reveal">
+        <div>
+          <span class="layer-num">Layer 02 — Tools</span>
+          <h3>Stuff the whole company uses</h3>
+          <p class="lead">Tools that make the whole business better — not one workflow. Drafting, answering, reporting, visibility. Maintained by us, forever. When models change or things break, that's our job, not yours.</p>
+          <p style="font-size:0.9rem; color:rgb(var(--muted));"><strong style="color:rgb(var(--text));">Teams typically recover 3–5 hours per person per week once the tools are live.</strong></p>
         </div>
-    </section>
-    
-    <!-- Testimonials Section -->
-    <section class="py-20 md:py-28">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">What Leaders Say</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Enterprise clients share their transformation stories.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="testimonial-card bg-white rounded-xl p-8 border border-gray-200">
-                    <div class="flex gap-1 mb-4">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                    </div>
-                    <p class="text-gray-700 mb-6 italic">
-                        "TeckAid transformed our customer service operations. We reduced response time by 70% and improved satisfaction scores dramatically."
-                    </p>
-                    <div class="border-t pt-4">
-                        <p class="font-bold text-gray-900">Sarah Chen</p>
-                        <p class="text-sm text-gray-600">VP of Customer Experience, FinServe Co</p>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card bg-white rounded-xl p-8 border border-gray-200">
-                    <div class="flex gap-1 mb-4">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                    </div>
-                    <p class="text-gray-700 mb-6 italic">
-                        "The deployment was seamless. We went from pilot to production in just 6 weeks. The ROI was immediate."
-                    </p>
-                    <div class="border-t pt-4">
-                        <p class="font-bold text-gray-900">Michael Rodriguez</p>
-                        <p class="text-sm text-gray-600">Chief Technology Officer, HealthTech Systems</p>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card bg-white rounded-xl p-8 border border-gray-200">
-                    <div class="flex gap-1 mb-4">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                    </div>
-                    <p class="text-gray-700 mb-6 italic">
-                        "Exceptional support and documentation. TeckAid team went above and beyond to ensure our success."
-                    </p>
-                    <div class="border-t pt-4">
-                        <p class="font-bold text-gray-900">Elena Vasquez</p>
-                        <p class="text-sm text-gray-600">Head of Digital Innovation, Retail Global</p>
-                    </div>
-                </div>
-            </div>
+        <div class="feature-list">
+          <div class="feature"><b>Email Drafter</b><span>every email pre-drafted, in each person's own voice</span></div>
+          <div class="feature"><b>AI Coworker</b><span>ask it anything, in the tools you already use</span></div>
+          <div class="feature"><b>Voice Receptionist</b><span>answers every call and books every lead, 24/7</span></div>
+          <div class="feature"><b>Live dashboards</b><span>your numbers, always current</span></div>
         </div>
-    </section>
-    
-    <!-- Blog / Latest Insights -->
-    <section id="resources" class="py-20 md:py-28 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Latest Insights</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Industry trends, best practices, and AI innovation stories.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
-                    <div class="p-6">
-                        <p class="text-xs text-gray-500 mb-2">August 20, 2024 • 5 min read</p>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">
-                            AI Backend Automation: The Future of Enterprise Operations
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Discover how intelligent automation is revolutionizing backend systems and reducing operational overhead.
-                        </p>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-700">Read Article →</a>
-                    </div>
-                </article>
-                
-                <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600"></div>
-                    <div class="p-6">
-                        <p class="text-xs text-gray-500 mb-2">August 15, 2024 • 7 min read</p>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">
-                            Transforming Healthcare with Intelligent AI Solutions
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            How AI is improving patient outcomes and enabling healthcare professionals to make data-driven decisions.
-                        </p>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-700">Read Article →</a>
-                    </div>
-                </article>
-                
-                <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600"></div>
-                    <div class="p-6">
-                        <p class="text-xs text-gray-500 mb-2">August 10, 2024 • 6 min read</p>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">
-                            Retail Revolution: AI-Powered Personalization at Scale
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Learn how modern retailers use AI to deliver personalized experiences and drive customer loyalty.
-                        </p>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-700">Read Article →</a>
-                    </div>
-                </article>
-            </div>
+      </div>
+
+      <div class="layer reveal">
+        <div>
+          <span class="layer-num">Layer 03 — Agents</span>
+          <h3>The busywork, automated</h3>
+          <p class="lead">The team that owns a workflow usually builds the better agent, so we teach them — with perfect infrastructure underneath. Rather have it done? We build them for you. Same foundation, same quality bar.</p>
+          <p style="font-size:0.9rem; color:rgb(var(--muted));"><strong style="color:rgb(var(--text));">Each agent typically replaces 5–15 hours of repeatable manual work per week.</strong> Built once, runs forever.</p>
         </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="py-20 md:py-28 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Business?</h2>
-            <p class="text-lg mb-8 text-blue-100">
-                Let's work together to unlock the potential of AI for your organization.
-            </p>
-            <div class="flex gap-4 flex-wrap justify-center">
-                <button class="px-8 py-3 bg-white text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition">
-                    Schedule a Demo
-                </button>
-                <button class="px-8 py-3 border-2 border-white text-white rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition">
-                    Learn More
-                </button>
-            </div>
+        <div class="feature-list">
+          <div class="feature"><b>Communication</b><span>meeting prep briefs, client update drafts</span></div>
+          <div class="feature"><b>Outbound</b><span>lead outreach and follow-up sequences</span></div>
+          <div class="feature"><b>Reporting</b><span>weekly KPI summaries, owner snapshots</span></div>
+          <div class="feature"><b>Customer support</b><span>triage, FAQ replies, escalations</span></div>
+          <div class="feature"><b>Operations</b><span>order processing, scheduling, route planning</span></div>
+          <div class="feature"><b>Finance</b><span>invoice chasing, reconciliation checks</span></div>
         </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-16">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Footer Content -->
-            <div class="grid grid-cols-1 md:grid-cols-6 gap-8 mb-12">
-                <!-- Column 1: Pre-Built Applications -->
-                <div>
-                    <h3 class="font-bold text-white mb-4">Pre-Built Applications</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Banking Solutions</a></li>
-                        <li><a href="#" class="hover:text-white transition">Healthcare AI</a></li>
-                        <li><a href="#" class="hover:text-white transition">Retail Platform</a></li>
-                        <li><a href="#" class="hover:text-white transition">IT Operations</a></li>
-                        <li><a href="#" class="hover:text-white transition">HR Management</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 2: Agent Platform -->
-                <div>
-                    <h3 class="font-bold text-white mb-4">Agent Platform</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Artemis Engine</a></li>
-                        <li><a href="#" class="hover:text-white transition">API Documentation</a></li>
-                        <li><a href="#" class="hover:text-white transition">Deployment Guides</a></li>
-                        <li><a href="#" class="hover:text-white transition">SDK & Tools</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 3: Industries -->
-                <div>
-                    <h3 class="font-bold text-white mb-4">Industries</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Financial Services</a></li>
-                        <li><a href="#" class="hover:text-white transition">Healthcare</a></li>
-                        <li><a href="#" class="hover:text-white transition">Retail & Ecommerce</a></li>
-                        <li><a href="#" class="hover:text-white transition">Telecommunications</a></li>
-                        <li><a href="#" class="hover:text-white transition">Manufacturing</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 4: Company -->
-                <div id="company">
-                    <h3 class="font-bold text-white mb-4">Company</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition">Press</a></li>
-                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 5: Resources -->
-                <div>
-                    <h3 class="font-bold text-white mb-4">Resources</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Documentation</a></li>
-                        <li><a href="#" class="hover:text-white transition">Community</a></li>
-                        <li><a href="#" class="hover:text-white transition">Support</a></li>
-                        <li><a href="#" class="hover:text-white transition">Status</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 6: Get Involved -->
-                <div>
-                    <h3 class="font-bold text-white mb-4">Get Involved</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Developer Program</a></li>
-                        <li><a href="#" class="hover:text-white transition">Partner with Us</a></li>
-                        <li><a href="#" class="hover:text-white transition">Submit RFP</a></li>
-                        <li><a href="#" class="hover:text-white transition">Contribute</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- CTA Card -->
-            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 mb-12 text-white">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Let's Work Together</h3>
-                        <p class="text-blue-100">Submit your RFP and let our team help you transform your business.</p>
-                    </div>
-                    <button class="px-8 py-3 bg-white text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition whitespace-nowrap">
-                        Submit RFP
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Social Links & Bottom -->
-            <div class="border-t border-gray-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold">T</span>
-                        </div>
-                        <span class="font-bold text-white">TeckAid</span>
-                    </div>
-                    
-                    <div class="flex gap-6 text-sm">
-                        <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                        <a href="#" class="hover:text-white transition">Terms of Service</a>
-                        <a href="#" class="hover:text-white transition">Trust Center</a>
-                    </div>
-                    
-                    <div class="flex gap-4">
-                        <a href="#" aria-label="LinkedIn" class="hover:text-white transition">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter" class="hover:text-white transition">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 9-7 9-7z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="GitHub" class="hover:text-white transition">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.603-3.369-1.343-3.369-1.343-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.89 1.529 2.341 1.544 2.914 1.184.09-.92.35-1.545.636-1.9-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                
-                <p class="text-center mt-8 text-sm text-gray-400">
-                    © 2024 TeckAid. All rights reserved. | Crafted with ❤️ for Enterprise
-                </p>
-            </div>
+      </div>
+
+      <p class="reveal" style="font-family:var(--font-display); font-weight:600; font-size:1.05rem;">Specced once. Maintained forever. <span style="color:rgb(var(--muted)); font-weight:400;">Skills change weekly; foundations change quarterly. We keep both current, so your setup compounds instead of decaying.</span></p>
+    </div>
+  </section>
+
+  <!-- DATA SOVEREIGNTY -->
+  <section class="section" id="data">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Data sovereignty</span>
+        <h2 class="display-md">Your data never leaves your business.</h2>
+        <p class="lead mt-2">Everything we build runs on your own accounts and your own tools. We never store your data, you own all of the IP, and if we disappeared tomorrow it would all keep running. It's model-agnostic too: Claude today, whatever wins tomorrow.</p>
+      </div>
+      <div class="feature-list reveal">
+        <div class="feature"><b>Runs on your accounts</b><span>your own servers, your own logins, your permissions</span></div>
+        <div class="feature"><b>You own all of the IP</b><span>nothing sits with us, nothing locks you in</span></div>
+        <div class="feature"><b>We never store your data</b><span>we build on top, you keep the keys</span></div>
+        <div class="feature"><b>Point any AI at it</b><span>provider-agnostic, never locked to one model</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE PREVIEW -->
+  <section class="section" id="preview" style="background:rgb(var(--surface)); border-block:1px solid rgb(var(--border));">
+    <div class="container">
+      <div class="band reveal">
+        <div class="absolute grid-pattern" style="position:absolute; inset:0; opacity:0.6;"></div>
+        <div class="band-inner">
+          <span class="pill">Free preview</span>
+          <h2 class="display-sm mt-2" style="max-width:34rem;">See your AI opportunity map before you ever talk to us.</h2>
+          <p class="lead mt-2" style="max-width:38rem;">Tell us about your business and the one workflow that eats your time. We'll reply with a draft opportunity map: where AI actually helps, what it would cost, and what to build first. Free, no obligation.</p>
+          <div class="mt-3"><a class="btn btn-primary btn-lg" href="/contact/">Get your free preview
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
         </div>
-    </footer>
-    
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-        
-        // Mobile Menu Toggle
-        function toggleMenu() {
-            const menu = document.querySelector('.nav-menu');
-            menu.classList.toggle('active');
-        }
-        
-        // Tab Switching
-        function switchTab(tabName) {
-            const buttons = document.querySelectorAll('.tab-button');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-        }
-        
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 10) {
-                nav.classList.add('scroll-shadow');
-            } else {
-                nav.classList.remove('scroll-shadow');
-            }
-        });
-        
-        // Close mobile menu on link click
-        const navLinks = document.querySelectorAll('.nav-menu a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                const menu = document.querySelector('.nav-menu');
-                menu.classList.remove('active');
-            });
-        });
-        
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2 class="display-md">Your team tells us what to build. Literally.</h2>
+        <p class="lead mt-2">No year-long proof of concepts. No strategy decks. An audit that turns your team's own words into a roadmap, then working systems within weeks.</p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="card card-pad step-card reveal">
+          <span class="step-num">1</span>
+          <h3>Audit</h3>
+          <div class="meta">$1,500 flat · about 7 days</div>
+          <p>We interview your team, 30 minutes each, up to 10 people. Those conversations become the spec. The fee comes straight back off your build — doubled if you start within 30 days.</p>
+        </article>
+        <article class="card card-pad step-card reveal d1">
+          <span class="step-num">2</span>
+          <h3>Roadmap</h3>
+          <div class="meta">Included · 2 days later</div>
+          <p>A ranked list of what to build, with ROI on every line. Share it internally; it doubles as the business case.</p>
+        </article>
+        <article class="card card-pad step-card reveal d2">
+          <span class="step-num">3</span>
+          <h3>Build</h3>
+          <div class="meta">from $2,500 · 1–2 weeks each</div>
+          <p>Your AI brain plus your first agents, on your own accounts, inside the tools you already use. No migration, no new platforms.</p>
+        </article>
+        <article class="card card-pad step-card reveal d3">
+          <span class="step-num">4</span>
+          <h3>Maintain</h3>
+          <div class="meta">$500/month · improving every month</div>
+          <p>It never breaks. We upgrade it as the models improve. Skills change weekly, and we keep up so you don't have to.</p>
+        </article>
+      </div>
+
+      <div class="card card-pad reveal mt-3" style="background:rgb(var(--surface-up));">
+        <p style="font-family:var(--font-display); font-weight:600;">Worried how your team will take it?</p>
+        <p class="text-muted mt-1" style="font-size:0.95rem;">The interviews are framed around one question: <strong style="color:rgb(var(--text));">“what would make your job more enjoyable?”</strong> Your people leave excited, not scared. It's their ideas that end up on the roadmap.</p>
+        <div class="mt-2"><a class="btn btn-primary" href="/contact/">Book a discovery call</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HUMANS -->
+  <section class="section" id="humans" style="background:rgb(var(--surface)); border-block:1px solid rgb(var(--border));">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The humans</span>
+        <h2 class="display-md">Change is scary. Pick people you trust.</h2>
+        <p class="lead mt-2">AI transformation isn't a software purchase. It's a partnership. These are the people who'll be in your corner.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="card card-pad team-card reveal">
+          <div class="avatar">N</div>
+          <div>
+            <h3>Nasir</h3>
+            <div class="role">Founder · Principal AI Builder</div>
+          </div>
+          <ul>
+            <li><strong>Cross-industry experience</strong>: oil &amp; gas, banking, e-commerce, and local business</li>
+            <li><strong>AI workflow &amp; automation expert</strong>: designs and ships the agents that run your busywork</li>
+            <li><strong>Bleeding-edge engineer</strong>: implements the latest AI so you get results, not demos</li>
+          </ul>
+        </article>
+
+        <article class="card card-pad team-card reveal d1">
+          <div class="avatar">Y</div>
+          <div>
+            <h3>You, the owner</h3>
+            <div class="role">The expert on your business</div>
+          </div>
+          <ul>
+            <li><strong>You know the business</strong> better than any consultant ever will</li>
+            <li><strong>Your context</strong> becomes the spec for every build</li>
+            <li><strong>You keep the keys</strong> — everything runs on your accounts</li>
+          </ul>
+        </article>
+
+        <article class="card card-pad team-card reveal d2">
+          <div class="avatar">T</div>
+          <div>
+            <h3>Your team</h3>
+            <div class="role">The people doing the work</div>
+          </div>
+          <ul>
+            <li><strong>They tell us what to automate</strong> — and what to leave alone</li>
+            <li><strong>They get the hours back</strong>, redirected to clients and growth</li>
+            <li><strong>They're trained, not replaced</strong> — agents they can run themselves</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="display-md">You'd ask us these on the call anyway.</h2>
+        <p class="lead mt-2">Every question below is a real question from a real discovery call. So here are the answers, upfront.</p>
+      </div>
+
+      <div class="reveal">
+        <div class="faq-item">
+          <button class="faq-q">Is my data actually safe?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>Sensible instinct. Everything we build runs on your own accounts and tools, ring-fenced per person using your existing permissions: payroll stays with payroll. Nothing sits with us, and if we disappeared tomorrow it would all keep running. No AI policy yet? We write it with you first, so your whole team knows what they can and can't plug in.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">Do I have to use your stack, or Claude specifically?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>Neither. You own all the IP, and what we build is deliberately model-agnostic: point Claude at it today, point whatever wins next year at it tomorrow. The models will keep leapfrogging each other; your foundation shouldn't care.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">Don't I need to clean up my data first?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>No, and that instinct delays businesses by a year. The brain makes sense of messy data: spreadsheets, inboxes, even three systems from old acquisitions. It actually cleans backwards, because wrong facts surface fast once everything is connected. Don't let the cleanup be the blocker. “It's all in the inboxes” is the starting state for most of our clients.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">What does it actually cost?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>The audit is a flat $1,500 for up to 10 interviews, and the full fee is credited towards your build. Builds start at $2,500, and maintenance is a flat $500 per month. Everything is priced to be less than half the ROI it returns, and if the numbers don't work for your business, we'll tell you on the call.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">Can we build some of it ourselves?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>Parts of it, yes, and they should. The team that owns a workflow usually builds the better agent, so we onboard your people to build that layer themselves — or we build it for you, your call. What nobody internally wants to build (or worse, maintain) is the foundation: the brain, the cross-team plumbing, the governance. That's the layer we own: specced once, maintained forever.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">Will this replace my team?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>It's the most common fear, and we handle it head-on. The audit interviews are framed around one question: “what would make your job more enjoyable?” We're removing the work a machine should do, not the people. Among our clients so far, nobody has downsized; they've redirected the hours into clients and the work that grows the business.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">What about AI usage costs and surprise bills?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>You've read the horror stories. So have we. You own your own AI accounts. Our fees never include AI usage costs, and team subscriptions keep those flat and predictable. Maintenance is a flat monthly fee covering fixes, model upgrades and improvements: no surprise bills from either side.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">What happens after launch — does it just break?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>A brain that's right on day one and wrong by day 365 is worse than no brain: one wrong answer costs your team's trust. That's why maintenance is the product, not an afterthought. Daily ingestion, weekly accuracy passes, model upgrades as they ship, for a flat $500 per month. It becomes our problem, not yours.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="section" id="guarantee">
+    <div class="container">
+      <div class="band reveal">
+        <div class="orb orb-green" style="top:-20%; right:-5%; width:360px; height:360px;"></div>
+        <div class="band-inner" style="text-align:center;">
+          <span class="pill">Our guarantee</span>
+          <h2 class="display-lg mt-2" style="margin-inline:auto; max-width:40rem;">Your AI brain live, your team using it. In 30 days.</h2>
+          <p class="lead mt-2" style="margin-inline:auto; max-width:36rem;">Or we keep working until it is. No asterisks. No exit clauses. If your whole team isn't getting value in 30 days, we haven't finished.</p>
+          <div class="flex gap-2 justify-center wrap mt-3">
+            <a class="btn btn-primary btn-lg btn-shine" href="/contact/">Claim your guarantee</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET STARTED -->
+  <section class="section" id="contact" style="background:rgb(var(--surface)); border-top:1px solid rgb(var(--border));">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="pill"><span class="live-dot"></span> We take on 3–4 clients per month · 2 spots currently open</span>
+        <h2 class="display-md mt-2">30 minutes. Zero pressure. Total clarity.</h2>
+        <p class="lead mt-2">Tell us about your business. If we're a fit, your AI audit can start the same week.</p>
+      </div>
+
+      <div class="cols-3 reveal">
+        <article class="card card-pad step-card">
+          <span class="step-num">1</span>
+          <h3>We reply same day</h3>
+          <p>Email us and you'll hear back within one business day — usually much sooner.</p>
+        </article>
+        <article class="card card-pad step-card">
+          <span class="step-num">2</span>
+          <h3>30-min discovery call</h3>
+          <p>We map the highest-ROI workflow and tell you honestly if AI is worth it.</p>
+        </article>
+        <article class="card card-pad step-card">
+          <span class="step-num">3</span>
+          <h3>Audit starts same week</h3>
+          <p>Interviews scheduled, roadmap underway. You'll see the first results within days.</p>
+        </article>
+      </div>
+
+      <div class="reveal mt-3" style="text-align:center;">
+        <a class="btn btn-primary btn-lg btn-shine" href="mailto:nasir@teckaid.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email nasir@teckaid.com
+        </a>
+        <p class="text-muted mt-2" style="font-size:0.85rem;">Prefer email? Write to us directly and we'll take it from there.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="absolute grid-pattern" style="position:absolute; inset:0; opacity:0.5;"></div>
+  <div class="container" style="position:relative;">
+    <div class="newsletter reveal" style="margin-top:3rem;">
+      <div>
+        <span class="pill"><span class="live-dot"></span> The Monthly Update</span>
+        <h3 class="mt-2" style="font-size:1.6rem;">What we built, what broke, and what it means for your business.</h3>
+        <p class="text-muted mt-1" style="font-size:0.9rem;">One email a month. Real numbers, real wins, real failures, no fluff. Unsubscribe anytime.</p>
+      </div>
+      <form class="flex gap-1 wrap" action="mailto:nasir@teckaid.com" method="post" enctype="text/plain">
+        <input class="field" style="flex:1; min-width:180px;" type="email" name="email" placeholder="you@company.com" aria-label="Your email" required>
+        <button class="btn btn-primary" type="submit">Subscribe
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="/">
+          <img class="logo-mark" src="/assets/logo-animated.svg" alt="TeckAid">
+          <span>TeckAid</span>
+        </a>
+        <p class="desc">We make small businesses AI-native. Less busywork. More leverage.</p>
+        <div class="flex items-center gap-1 mt-2" style="font-size:0.85rem; color:rgb(var(--faint));"><span class="live-dot"></span> Houston, Texas</div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/#results">Our Results</a>
+        <a href="/services/">What We Do</a>
+        <a href="/#method">The Method</a>
+        <a href="/about/">About Us</a>
+        <a href="/contact/">Book a Discovery Call</a>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="/products/">All Products</a>
+        <a href="/products/#ai-audit">AI Audit</a>
+        <a href="/products/#ai-brain">Business AI Brain</a>
+        <a href="/products/#ai-inbox">AI Inbox</a>
+        <a href="/products/#seo-geo">SEO / GEO Growth Engine</a>
+        <a href="/products/#workshop">AI-Ready Workshop</a>
+        <a href="/products/#teckaid-os">TeckAid OS</a>
+        <a href="/products/#teckaid-recruit">TeckAid Recruit</a>
+        <a href="/products/#brand-studio">Brand Studio</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="/blog/">Blog</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#process">Our Process</a>
+        <a href="/#data">Data Sovereignty</a>
+        <a href="/#humans">The Humans</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> TeckAid. All rights reserved.</span>
+      <span><a href="/terms/">Terms &amp; Conditions</a> · <a href="/privacy/">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
 </body>
 </html>

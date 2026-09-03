@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="TeckAid">
+  <defs>
+    <linearGradient id="tkG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#13bb8e"/>
+      <stop offset="1" stop-color="#0b8a6a"/>
+    </linearGradient>
+    <clipPath id="tkClip">
+      <rect width="48" height="48" rx="13"/>
+    </clipPath>
+  </defs>
+
+  <!-- Tile -->
+  <rect width="48" height="48" rx="13" fill="url(#tkG)"/>
+
+  <!-- Sheen sweep across the tile -->
+  <g clip-path="url(#tkClip)">
+    <g transform="skewX(-20)">
+      <rect x="-70" y="-4" width="22" height="56" fill="rgba(255,255,255,0.22)">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 200 0" dur="2.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- "T" -->
+  <path d="M14 17h20" stroke="#fff" stroke-width="5.4" stroke-linecap="round"/>
+  <path d="M24 17v16.5" stroke="#fff" stroke-width="5.4" stroke-linecap="round"/>
+
+  <!-- Ping ring -->
+  <circle cx="37.5" cy="12.5" r="3" fill="none" stroke="#10B981" stroke-width="1.4" opacity="0">
+    <animate attributeName="r" values="3;7.5" dur="1.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Spark dot -->
+  <circle cx="37.5" cy="12.5" r="2.5" fill="#10B981">
+    <animate attributeName="r" values="2.5;3.3;2.5" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+</svg>
